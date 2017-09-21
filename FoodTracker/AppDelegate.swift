@@ -6,14 +6,19 @@
 //  Copyright © 2017 Sabrina R. Sayasith. All rights reserved.
 //
 
+//app delegate functions:
+// provides window in which content is drawn,
+// area to respond to state transitions
+//respond to app level events here
+
 import UIKit
 
-@UIApplicationMain
+@UIApplicationMain //entry point to app, and run loop
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    //the following: These methods let the application object communicate with the app delegate
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
